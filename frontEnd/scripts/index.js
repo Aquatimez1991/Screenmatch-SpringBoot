@@ -22,7 +22,10 @@ function crearListaPeliculas(elemento, datos) {
     ul.className = 'lista';
     const listaHTML = datos.map((pelicula) => `
         <li>
-            <a href="/detalles.html?id=${pelicula.id}">
+        <!--    modifique aqui para que funcione con las rutas con live server-->
+        <!--    <a href="/detalles.html?id=pelicula.id">-->
+        <!--    rutas con live edit-->
+            <a href="/Screenmatch-SpringBoot/frontEnd/detalles.html?id=${pelicula.id}">
                 <img src="${pelicula.poster}" alt="${pelicula.titulo}">
             </a>
         </li>
